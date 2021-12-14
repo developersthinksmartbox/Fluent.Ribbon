@@ -5,7 +5,7 @@
     <AssemblyName>Fluent.Ribbon.Showcase</AssemblyName>
     
     <NoWarn>$(NoWarn);SA0001;SA1601</NoWarn>
-    <InlcudeMahAppsMetro>true</InlcudeMahAppsMetro>
+    <InlcudeMahAppsMetro>false</InlcudeMahAppsMetro>
     <InlcudeMahAppsMetro Condition="$(TargetFramework) == 'net452'">false</InlcudeMahAppsMetro>
 
     <DefineConstants Condition="$(InlcudeMahAppsMetro)">$(DefineConstants);MahApps_Metro</DefineConstants>
@@ -30,6 +30,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Fluent.Ribbon\Fluent.Ribbon.csproj" />
 
+    <PackageReference Include="ControlzEx" />
     <PackageReference Include="MahApps.Metro.IconPacks.Material" />
     <PackageReference Include="MahApps.Metro" Condition="$(InlcudeMahAppsMetro)" />
   </ItemGroup>
