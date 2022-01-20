@@ -604,7 +604,7 @@ namespace Fluent
 
             if (this.ownerWindow != null)
             {
-                this.ownerWindow.PreviewKeyDown -= this.HandleOwnerWindowKeyDown;
+                this.ownerWindow.KeyDown -= this.HandleOwnerWindowKeyDown;
                 this.ownerWindow.SizeChanged -= this.HandleOwnerWindowSizeChanged;
 
                 if (double.IsNaN(this.savedWindowMinWidth) == false
